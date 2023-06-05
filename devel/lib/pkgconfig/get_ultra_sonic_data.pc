@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/test_robot/devel
+
+Name: get_ultra_sonic_data
+Description: Description of get_ultra_sonic_data
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

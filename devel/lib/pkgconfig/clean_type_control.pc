@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/test_robot/devel
+
+Name: clean_type_control
+Description: Description of clean_type_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

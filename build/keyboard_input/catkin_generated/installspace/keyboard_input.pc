@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/test_robot/install
+
+Name: keyboard_input
+Description: Description of keyboard_input
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

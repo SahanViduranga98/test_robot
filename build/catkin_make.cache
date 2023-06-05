@@ -1,0 +1,2 @@
+clean_type_control:get_ultra_sonic_data:keyboard_input:listener:test_gpio
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/test_robot/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/test_robot/install -G Unix Makefiles
