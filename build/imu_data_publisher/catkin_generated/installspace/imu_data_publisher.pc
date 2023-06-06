@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/test_robot/install
+
+Name: imu_data_publisher
+Description: Description of imu_data_publisher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/test_robot/build/gtest/cmake_install.cmake")
   include("/home/ubuntu/test_robot/build/clean_type_control/cmake_install.cmake")
+  include("/home/ubuntu/test_robot/build/error_handeling/cmake_install.cmake")
   include("/home/ubuntu/test_robot/build/get_ultra_sonic_data/cmake_install.cmake")
   include("/home/ubuntu/test_robot/build/keyboard_input/cmake_install.cmake")
   include("/home/ubuntu/test_robot/build/listener/cmake_install.cmake")

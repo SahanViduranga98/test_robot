@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/test_robot/build
 # The main recursive "all" target.
 all: gtest/all
 all: clean_type_control/all
+all: error_handeling/all
 all: get_ultra_sonic_data/all
 all: keyboard_input/all
 all: listener/all
@@ -65,6 +66,7 @@ all: test_gpio/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: clean_type_control/preinstall
+preinstall: error_handeling/preinstall
 preinstall: get_ultra_sonic_data/preinstall
 preinstall: keyboard_input/preinstall
 preinstall: listener/preinstall
@@ -80,6 +82,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: clean_type_control/clean
+clean: error_handeling/clean
 clean: get_ultra_sonic_data/clean
 clean: keyboard_input/clean
 clean: listener/clean
@@ -119,6 +122,24 @@ clean_type_control/clean: clean_type_control/CMakeFiles/roscpp_generate_messages
 clean_type_control/clean: clean_type_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean_type_control/clean
+
+#=============================================================================
+# Directory level rules for directory error_handeling
+
+# Recursive "all" directory target.
+error_handeling/all: error_handeling/CMakeFiles/error_handeling.dir/all
+
+.PHONY : error_handeling/all
+
+# Recursive "preinstall" directory target.
+error_handeling/preinstall:
+
+.PHONY : error_handeling/preinstall
+
+# Recursive "clean" directory target.
+error_handeling/clean: error_handeling/CMakeFiles/error_handeling.dir/clean
+
+.PHONY : error_handeling/clean
 
 #=============================================================================
 # Directory level rules for directory get_ultra_sonic_data
@@ -392,7 +413,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -419,7 +440,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=3,4 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=5,6 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -446,7 +467,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,7 +494,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=7,8 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=9,10 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -926,13 +947,40 @@ clean_type_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 .PHONY : clean_type_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target error_handeling/CMakeFiles/error_handeling.dir
+
+# All Build rule for target.
+error_handeling/CMakeFiles/error_handeling.dir/all:
+	$(MAKE) -f error_handeling/CMakeFiles/error_handeling.dir/build.make error_handeling/CMakeFiles/error_handeling.dir/depend
+	$(MAKE) -f error_handeling/CMakeFiles/error_handeling.dir/build.make error_handeling/CMakeFiles/error_handeling.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=3,4 "Built target error_handeling"
+.PHONY : error_handeling/CMakeFiles/error_handeling.dir/all
+
+# Build rule for subdir invocation for target.
+error_handeling/CMakeFiles/error_handeling.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test_robot/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 error_handeling/CMakeFiles/error_handeling.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/test_robot/build/CMakeFiles 0
+.PHONY : error_handeling/CMakeFiles/error_handeling.dir/rule
+
+# Convenience name for target.
+error_handeling: error_handeling/CMakeFiles/error_handeling.dir/rule
+
+.PHONY : error_handeling
+
+# clean rule for target.
+error_handeling/CMakeFiles/error_handeling.dir/clean:
+	$(MAKE) -f error_handeling/CMakeFiles/error_handeling.dir/build.make error_handeling/CMakeFiles/error_handeling.dir/clean
+.PHONY : error_handeling/CMakeFiles/error_handeling.dir/clean
+
+#=============================================================================
 # Target rules for target get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir
 
 # All Build rule for target.
 get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/all:
 	$(MAKE) -f get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/build.make get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/depend
 	$(MAKE) -f get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/build.make get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=15,16 "Built target ultrasonic_data_reader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=17,18 "Built target ultrasonic_data_reader"
 .PHONY : get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/all
 
 # Build rule for subdir invocation for target.
@@ -959,7 +1007,7 @@ get_ultra_sonic_data/CMakeFiles/ultrasonic_data_reader.dir/clean:
 keyboard_input/CMakeFiles/keyboard_publisher.dir/all:
 	$(MAKE) -f keyboard_input/CMakeFiles/keyboard_publisher.dir/build.make keyboard_input/CMakeFiles/keyboard_publisher.dir/depend
 	$(MAKE) -f keyboard_input/CMakeFiles/keyboard_publisher.dir/build.make keyboard_input/CMakeFiles/keyboard_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=11,12 "Built target keyboard_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=13,14 "Built target keyboard_publisher"
 .PHONY : keyboard_input/CMakeFiles/keyboard_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -986,7 +1034,7 @@ keyboard_input/CMakeFiles/keyboard_publisher.dir/clean:
 listener/CMakeFiles/keyboard_subscriber.dir/all:
 	$(MAKE) -f listener/CMakeFiles/keyboard_subscriber.dir/build.make listener/CMakeFiles/keyboard_subscriber.dir/depend
 	$(MAKE) -f listener/CMakeFiles/keyboard_subscriber.dir/build.make listener/CMakeFiles/keyboard_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=13,14 "Built target keyboard_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/test_robot/build/CMakeFiles --progress-num=15,16 "Built target keyboard_subscriber"
 .PHONY : listener/CMakeFiles/keyboard_subscriber.dir/all
 
 # Build rule for subdir invocation for target.

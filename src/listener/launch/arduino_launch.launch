@@ -10,6 +10,10 @@
 <node pkg="clean_type_control" type="clean_type_control_node" name="gpio_control_node">
 </node>
 
+<node pkg="error_handeling" type="error_handeling" name="error_handeling_node">
+</node>
+
+
 <node pkg="get_ultra_sonic_data" type="ultrasonic_data_reader" name="edge_detect_node">
 </node>
 

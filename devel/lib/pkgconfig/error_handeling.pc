@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/test_robot/devel
+
+Name: error_handeling
+Description: Description of error_handeling
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs

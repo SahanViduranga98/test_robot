@@ -416,6 +416,12 @@ clean_type_control_SOURCE_DIR:STATIC=/home/ubuntu/test_robot/src/clean_type_cont
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
 //Value Computed by CMake
+error_handeling_BINARY_DIR:STATIC=/home/ubuntu/test_robot/build/error_handeling
+
+//Value Computed by CMake
+error_handeling_SOURCE_DIR:STATIC=/home/ubuntu/test_robot/src/error_handeling
+
+//Value Computed by CMake
 get_ultra_sonic_data_BINARY_DIR:STATIC=/home/ubuntu/test_robot/build/get_ultra_sonic_data
 
 //Value Computed by CMake
@@ -466,6 +472,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+imu_data_publisher_BINARY_DIR:STATIC=/home/ubuntu/test_robot/build/imu_data_publisher
+
+//Value Computed by CMake
+imu_data_publisher_SOURCE_DIR:STATIC=/home/ubuntu/test_robot/src/imu_data_publisher
 
 //Value Computed by CMake
 keyboard_input_BINARY_DIR:STATIC=/home/ubuntu/test_robot/build/keyboard_input
@@ -681,7 +693,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

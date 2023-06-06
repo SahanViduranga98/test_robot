@@ -493,6 +493,19 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named error_handeling
+
+# Build rule for target.
+error_handeling: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 error_handeling
+.PHONY : error_handeling
+
+# fast build rule for target.
+error_handeling/fast:
+	$(MAKE) -f error_handeling/CMakeFiles/error_handeling.dir/build.make error_handeling/CMakeFiles/error_handeling.dir/build
+.PHONY : error_handeling/fast
+
+#=============================================================================
 # Target rules for targets named ultrasonic_data_reader
 
 # Build rule for target.
@@ -569,6 +582,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... error_handeling"
 	@echo "... ultrasonic_data_reader"
 	@echo "... keyboard_publisher"
 	@echo "... keyboard_subscriber"
