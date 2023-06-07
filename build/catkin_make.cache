@@ -1,2 +1,2 @@
-clean_type_control:error_handeling:get_ultra_sonic_data:keyboard_input:listener:test_gpio
+autonomus_driving:clean_type_control:error_handeling:get_ultra_sonic_data:keyboard_input:listener:test_gpio
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/test_robot/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/test_robot/install -G Unix Makefiles

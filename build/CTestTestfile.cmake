@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("autonomus_driving")
 subdirs("clean_type_control")
 subdirs("error_handeling")
 subdirs("get_ultra_sonic_data")

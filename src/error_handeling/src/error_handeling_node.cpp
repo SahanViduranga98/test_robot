@@ -8,13 +8,12 @@ void errorCallback(const std_msgs::String::ConstPtr& msg)
     ROS_INFO_STREAM("Received edge warning: " << msg->data);
 
     // Publish error message on "error" topic
-    if(msg->data!="0"){
         ros::NodeHandle nh;
         ros::Publisher errorPub = nh.advertise<std_msgs::String>("warning", 1);
         std_msgs::String errorMsg;
-        errorMsg.data = "An error occurred while processing edge warning.";
+        errorMsg.data = msg->data;
         errorPub.publish(errorMsg);
-    }
+
    
 }
 

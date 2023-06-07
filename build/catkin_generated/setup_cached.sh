@@ -7,9 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/ubuntu/test_robot/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/ubuntu/test_robot/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/ubuntu/test_robot/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/ubuntu/test_robot/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/ubuntu/test_robot/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/ubuntu/test_robot/src:$ROS_PACKAGE_PATH"

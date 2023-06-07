@@ -13,6 +13,9 @@
 <node pkg="error_handeling" type="error_handeling" name="error_handeling_node">
 </node>
 
+<node pkg="autonomus_driving" type="autonomus_driving" name="autonomus_driving_node">
+</node>
+
 
 <node pkg="get_ultra_sonic_data" type="ultrasonic_data_reader" name="edge_detect_node">
 </node>

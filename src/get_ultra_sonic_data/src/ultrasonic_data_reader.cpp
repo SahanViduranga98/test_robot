@@ -12,10 +12,10 @@ int pi;
    // Connect to the pigpiod daemon
 std::string edge_find(const std::vector<int> left_sensor,const std:: vector<int> right_sensor){
     std::string find_edge="0";
-    if(left_sensor[0]==1 && left_sensor[1]==1 && right_sensor[0]==1 && right_sensor[1]==1){
-        find_edge="3";
+    if(left_sensor[2]==1 || right_sensor[2]==1 ){
+        find_edge="2";
         std::cout << find_edge<<std::endl;
-    }else if(left_sensor[2]==1 && right_sensor[2]==1){
+    }else if(left_sensor[0]==1 || right_sensor[0]==1){
         find_edge="3";
     }else if(left_sensor[1]){
         find_edge="4";
